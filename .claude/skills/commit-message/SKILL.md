@@ -19,4 +19,4 @@ Steps:
 2. Run `git diff --cached` to read the actual changes.
 3. Pick the most accurate type and scope.
 4. Write a single-line summary that describes all the changes being committed.
-5. Present the output as a ready-to-run `git commit -m "..."` command in a code block the user can copy-paste directly.
+5. Present just the commit message in a code block so the user can copy it.
