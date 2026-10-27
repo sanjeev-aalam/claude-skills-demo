@@ -9,14 +9,14 @@ Write a commit message for the staged changes following these rules:
 1. **Format:** `type(scope): summary`
 2. **Types:** feat, fix, docs, style, refactor, test, chore, build, ci, perf
 3. **Scope:** the area of the codebase affected (e.g., `css`, `nav`, `contact`, `about`)
-4. **Summary line:** present tense, lowercase, no period, under 72 characters
-5. **Body (optional):** separated by a blank line, wrap at 72 characters, explain *why* not *what*
+4. **Single line only** — no body, no multi-line messages
+5. **Mention all changes** — the summary must cover every file and change in the staged diff, not just the main one
+6. Present tense, lowercase, no period, under 72 characters
 
 Steps:
 
 1. Run `git diff --cached --stat` to see which files are staged.
 2. Run `git diff --cached` to read the actual changes.
 3. Pick the most accurate type and scope.
-4. Write a summary that describes the intent of the change.
-5. Add a body only if the *why* is not obvious from the summary.
-6. Present the full commit message in a code block so the user can copy it.
+4. Write a single-line summary that describes all the changes being committed.
+5. Present the output as a ready-to-run `git commit -m "..."` command in a code block the user can copy-paste directly.
